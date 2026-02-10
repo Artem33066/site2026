@@ -1,0 +1,4 @@
+/* Стили для reg */
+@import url('../Main/main.css');
+
+.site-header { background:#0b6b3a; color:#fff; }

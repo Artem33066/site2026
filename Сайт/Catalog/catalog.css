@@ -1,0 +1,4 @@
+/* Стили для catalog */
+@import url('../Main/main.css');
+
+.site-header { background:#2b7a78; color:#fff; }

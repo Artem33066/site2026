@@ -1,0 +1,4 @@
+/* Стили для entrance */
+@import url('../Main/main.css');
+
+.site-header { background:#1a1a1a; color:#fff; }
