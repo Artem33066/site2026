@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Main</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <input type="checkbox" id="theme">
+
+<div class="page">
+	<header class="site-header" role="banner">
+		<div class="container header-inner">
+			<a href="#" class="logo" aria-label="Перейти на главную">
+				<!-- можно заменить на <img src="../assets/logo.svg" alt="..."> -->
+				<span class="logo-mark">МойСайт</span>
+			</a>
+
+			<button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Открыть меню">
+				<span class="burger"></span>
+			</button>
+
+			<nav id="primary-navigation" class="primary-nav" role="navigation">
+				<form class="nav-search" role="search" action="#" method="get">
+					<label for="site-search" class="visually-hidden">Поиск</label>
+					<input id="site-search" name="q" type="search" placeholder="Поиск" aria-label="Поиск по сайту">
+				</form>
+
+				<ul class="nav-list">
+					<li><a href="../Catalog/catalog.html">Каталог</a></li>
+					<li><a href="../Entrance/entrance.html" class="btn btn-primary">Регистрация / Войти</a></li>
+					<li><a href="../Account/account.html" class="btn btn-ghost">Личный кабинет</a></li>
+				</ul>
+                <label for="theme" class="theme-toggle">
+                🌞 / 🌙
+                </label>
+			</nav>
+		</div>
+	</header>
+
+	<main id="content">
+		<div class="slider">
+
+  <input type="radio" name="slide" id="s1" checked>
+  <input type="radio" name="slide" id="s2">
+  <input type="radio" name="slide" id="s3">
+
+  <div class="slides">
+
+    <div class="card">
+      <img src="/Users/artem/Documents/Сайт/Image/images.jpeg" alt="Game 1">
+      <h3>CyberPank</h3>
+      <p>Футуристическая RPG в открытом мире.</p>
+      <div class="price">1999 ₽</div>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180" alt="Game 2">
+      <h3>Speed Racers</h3>
+      <p>Аркадные гонки с мультиплеером.</p>
+      <div class="price">1499 ₽</div>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180" alt="Game 3">
+      <h3>Zombie Survival</h3>
+      <p>Выживание в мире зомби.</p>
+      <div class="price">1799 ₽</div>
+      <button>Подробнее</button>
+    </div>
+
+  </div>
+
+  <div class="controls">
+    <label for="s1"></label>
+    <label for="s2"></label>
+    <label for="s3"></label>
+  </div>
+
+</div>
+
+	</main>
+
+	<script src="main.js" defer></script>
+</body>
+
+<div class="games-grid">
+
+  <a href="catalog.html" class="game-card">
+    <img src="https://via.placeholder.com/300x180" alt="Cyber Adventure">
+    <div class="info">
+      <h3>Cyber Adventure</h3>
+      <p class="genre">RPG, Action</p>
+      <p class="company">Neon Games</p>
+      <div class="rating">★★★★★</div>
+      <div class="bottom">
+        <span class="price">1999 ₽</span>
+        <span class="btn">В каталог</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="catalog.html" class="game-card">
+    <img src="https://via.placeholder.com/300x180" alt="Speed Racers">
+    <div class="info">
+      <h3>Speed Racers</h3>
+      <p class="genre">Racing, Arcade</p>
+      <p class="company">Fast Studio</p>
+      <div class="rating">★★★★☆</div>
+      <div class="bottom">
+        <span class="price">1499 ₽</span>
+        <span class="btn">В каталог</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="catalog.html" class="game-card">
+    <img src="https://via.placeholder.com/300x180" alt="Zombie Survival">
+    <div class="info">
+      <h3>Zombie Survival</h3>
+      <p class="genre">Survival, Horror</p>
+      <p class="company">Dark Labs</p>
+      <div class="rating">★★★★★</div>
+      <div class="bottom">
+        <span class="price">1799 ₽</span>
+        <span class="btn">В каталог</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="catalog.html" class="game-card">
+    <img src="https://via.placeholder.com/300x180" alt="Space Strategy">
+    <div class="info">
+      <h3>Space Strategy</h3>
+      <p class="genre">Strategy, Sci-Fi</p>
+      <p class="company">Orbit Team</p>
+      <div class="rating">★★★☆☆</div>
+      <div class="bottom">
+        <span class="price">1299 ₽</span>
+        <span class="btn">В каталог</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="catalog.html" class="game-card">
+    <img src="https://via.placeholder.com/300x180" alt="Fantasy World">
+    <div class="info">
+      <h3>Fantasy World</h3>
+      <p class="genre">MMORPG, Fantasy</p>
+      <p class="company">Magic Dev</p>
+      <div class="rating">★★★★☆</div>
+      <div class="bottom">
+        <span class="price">2499 ₽</span>
+        <span class="btn">В каталог</span>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+<footer class="footer">
+
+  <div class="footer-grid">
+
+    <div class="footer-block">
+      <h4>Контакты</h4>
+      <p>📞 8-800-999-55-99</p>
+      <p>✉ best@games.ru</p>
+    </div>
+
+    <div class="footer-block">
+      <h4>Информация</h4>
+      <a href="#">Клиентам</a>
+      <a href="#">Партнерам</a>
+      <a href="#">О нас</a>
+      <a href="#">Контакты</a>
+    </div>
+
+    <div class="footer-block">
+      <h4>Навигация</h4>
+      <a href="#">Главная</a>
+      <a href="#">Регистрация</a>
+      <a href="#">Авторизация</a>
+      <a href="#">Личный кабинет</a>
+      <a href="#search">Поиск</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Best Games — Все права защищены
+  </div>
+
+</footer>
+
+
+</html>
+
